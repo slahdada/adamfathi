@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosni Fathi | Expert Génie Civil & Charpente</title>
+    <meta name="description" content="Hosni Fathi, Ingénieur Expert en Génie Civil spécialisé dans les structures et charpentes. Solutions techniques modernes et innovantes.">
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo-wrapper">
+                    <div class="logo-icon glass">
+                        <img src="engineering_logomark_animated_1773814713308.png" alt="Logo">
+                    </div>
+                </div>
+
+                <!-- Main Desktop Navigation -->
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#expertise" data-i18n="nav_expertise">Expertise</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-controls">
+                    <!-- Lang Pill -->
+                    <button class="pill-btn lang-toggle" id="lang-btn">
+                        <i class="fas fa-globe"></i> <span id="current-lang">FR</span>
+                    </button>
+                    <!-- Theme Pill -->
+                    <button class="pill-btn mode-toggle" id="theme-btn">
+                        <i class="fas fa-sun" id="theme-icon"></i>
+                    </button>
+                    <!-- Phone Pill -->
+                    <a href="tel:+21698560836" class="pill-btn">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <!-- WhatsApp Pill -->
+                    <a href="https://wa.me/21698560836" class="wa-pill-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle (Simplified) -->
+                <button class="mobile-toggle" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sticky Mobile Actions (Always Visible) -->
+    <div class="sticky-actions">
+        <a href="tel:+21698560836" class="sticky-btn call-btn shadow" title="Appeler">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/21698560836" class="sticky-btn wa-btn shadow" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="technical-font" style="margin-bottom: 10px; opacity: 0.9;">
+                    // EXPERT EN STRUCTURES COMPLEXES
+                </div>
+                <h1 data-i18n="hero_title">Hosni <span>Fathi</span></h1>
+                <p data-i18n="hero_subtitle">Ingénieur en génie civil spécialisé dans la conception et l'analyse de charpentes métalliques et bois de haute précision.</p>
+                
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <a href="#projects" class="btn btn-primary"><span data-i18n="view_projects">PROJETS</span></a>
+                    <a href="#services" class="btn btn-outline" data-i18n="learn_more">SAVOIR PLUS</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <img src="technical_structural_hero_1773814695068.png" alt="Technical Drawing">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="about-split glass animate-on-scroll" style="padding: 40px; border-radius: 20px;">
+            <div class="profile-img-container">
+                <img src="hosni-fathi.jpg" alt="Hosni Fathi Profile" class="profile-img">
+            </div>
+            <div>
+                <div class="section-title">
+                    <span class="technical-font">// PROFIL</span>
+                    <h2 data-i18n="about_title">L'Excellence Technique</h2>
+                    <div class="section-line"></div>
+                </div>
+                <p data-i18n="about_text_1">Fort de plusieurs années d'expérience en bureau d'études, Hosni Fathi accompagne les maîtres d'ouvrage et architectes dans la sécurisation et l'optimisation de leurs structures.</p>
+                <div style="margin: 25px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="glass" style="padding: 15px;">
+                        <span class="technical-font">01 /</span>
+                        <div style="font-weight: 600;">CHARPENTE BOIS</div>
+                    </div>
+                    <div class="glass" style="padding: 15px;">
+                        <span class="technical-font">02 /</span>
+                        <div style="font-weight: 600;">STRUCTURE ACIER</div>
+                    </div>
+                    <div class="glass" style="padding: 15px;">
+                        <span class="technical-font">03 /</span>
+                        <div style="font-weight: 600;">CALCUL EUROCODES</div>
+                    </div>
+                    <div class="glass" style="padding: 15px;">
+                        <span class="technical-font">04 /</span>
+                        <div style="font-weight: 600;">BIM & 3D</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="container">
+        <div class="section-title animate-on-scroll">
+            <span class="technical-font">// SERVICES</span>
+            <h2 data-i18n="services_title">Expertise Globale</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card glass animate-on-scroll">
+                <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h3 data-i18n="service_1_title">Conception & Études</h3>
+                <p data-i18n="service_1_desc">Dimensionnement et modélisation de charpentes complexes avec une précision millimétrique.</p>
+                <span class="technical-font">VIEW SPECS <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="card glass animate-on-scroll delay-100">
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <h3 data-i18n="service_2_title">Calcul de Structure</h3>
+                <p data-i18n="service_2_desc">Vérification de la portance, résistance aux séismes et aux vents extrêmes via logiciels de pointe.</p>
+                <span class="technical-font">VIEW SPECS <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="card glass animate-on-scroll delay-200">
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3 data-i18n="service_3_title">Expertise & Audit</h3>
+                <p data-i18n="service_3_desc">Diagnostic technique de structures existantes et préconisations de renforcement.</p>
+                <span class="technical-font">VIEW SPECS <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="projects" class="container">
+        <div class="section-title animate-on-scroll">
+            <span class="technical-font">// PORTFOLIO</span>
+            <h2 data-i18n="projects_title">Réalisations Marquantes</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item glass animate-on-scroll" onclick="openLightbox(0)">
+                <img src="project1.png" alt="Stade Olympique">
+                <div class="gallery-overlay">
+                    <span class="technical-font">01 / STADE OLYMPIQUE</span>
+                    <p data-i18n="p1_desc">Conception de la toiture auto-portante hybride acier/bois.</p>
+                </div>
+            </div>
+            <div class="gallery-item glass animate-on-scroll delay-100" onclick="openLightbox(1)">
+                <img src="project2.png" alt="Complexe Industriel">
+                <div class="gallery-overlay">
+                    <span class="technical-font">02 / COMPLEXE INDUSTRIEL</span>
+                    <p data-i18n="p2_desc">Charpente métallique lourde pour logistique frigorifique.</p>
+                </div>
+            </div>
+            <div class="gallery-item glass animate-on-scroll delay-200" onclick="openLightbox(2)">
+                <img src="project3.png" alt="Villa Résidentielle">
+                <div class="gallery-overlay">
+                    <span class="technical-font">03 / VILLA RÉSIDENTIELLE</span>
+                    <p data-i18n="p3_desc">Structure bois complexe pour design architectural audacieux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="technical-font"></div>
+    </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background: var(--bg-primary);">
+        <div class="container">
+            <div class="animate-on-scroll" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 60px;">
+                <h2 data-i18n="testi_title" style="font-size: 2.5rem; text-transform: none; margin-bottom: 20px;">Témoignages Clients</h2>
+                <div class="section-line" style="background: #f97316; width: 80px; height: 5px; border-radius: 5px;"></div>
+            </div>
+            
+            <div class="card-grid testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card glass animate-on-scroll">
+                    <div class="testi-header">
+                        <img src="avatar_ahmed.png" alt="Ahmed K." class="testi-avatar">
+                        <div class="testi-author">
+                            <h4 data-i18n="t1_name">Ahmed K.</h4>
+                            <span data-i18n="t1_role">DIRECTEUR DE PROJET, ENTREPRISE BTP</span>
+                        </div>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t1_text">"L'expertise de Hosni sur notre dernier projet de charpente métallique a été décisive. Ses notes de calcul étaient impeccables et ont permis une validation rapide par le bureau de contrôle."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card glass animate-on-scroll delay-100">
+                    <div class="testi-header">
+                        <img src="avatar_sarah.png" alt="Sarah M." class="testi-avatar">
+                        <div class="testi-author">
+                            <h4 data-i18n="t2_name">Sarah M.</h4>
+                            <span data-i18n="t2_role">ARCHITECTE DPLG</span>
+                        </div>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t2_text">"Travailler avec Hosni est un vrai plaisir. Il comprend les enjeux architecturaux et propose des solutions structurelles élégantes et optimisées. Un partenaire de confiance."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card glass animate-on-scroll delay-200">
+                    <div class="testi-header">
+                        <img src="avatar_karim.png" alt="Karim B." class="testi-avatar">
+                        <div class="testi-author">
+                            <h4 data-i18n="t3_name">Karim B.</h4>
+                            <span data-i18n="t3_role">MAÎTRE D'OUVRAGE</span>
+                        </div>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t3_text">"Rigueur, respect des délais et optimisation des coûts. L'audit structurel réalisé par Hosni nous a permis de sauver un bâtiment industriel que nous pensions condamné."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="animate-on-scroll" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 60px;">
+                <span class="technical-font">// MÉTHODOLOGIE</span>
+                <h2 data-i18n="meth_title">Du Plan à la Réalité</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="card-grid animate-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div style="text-align: center;">
+                    <div class="technical-font" style="font-size: 3rem; opacity: 0.2;">01</div>
+                    <h4 data-i18n="step1">Analyse Besoins</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div class="technical-font" style="font-size: 3rem; opacity: 0.2;">02</div>
+                    <h4 data-i18n="step2">Modélisation 3D</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div class="technical-font" style="font-size: 3rem; opacity: 0.2;">03</div>
+                    <h4 data-i18n="step3">Calcul & Note</h4>
+                </div>
+                <div style="text-align: center;">
+                    <div class="technical-font" style="font-size: 3rem; opacity: 0.2;">04</div>
+                    <h4 data-i18n="step4">Livraison Plans</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Panel -->
+    <div class="ai-bubble">
+        <div class="ai-panel glass shadow" id="ai-panel">
+            <div class="ai-header">
+                <div style="font-weight: 600;"><i class="fas fa-magic" style="color: #ffffff; margin-right: 8px;"></i> Gemini AI Assistant</div>
+                <button id="close-ai" style="background: none; border: none; color: white; cursor: pointer;"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat" id="ai-chat-box">
+                <div class="glass" style="padding: 10px; font-size: 0.9rem; align-self: flex-start; border-bottom-left-radius: 0; border-left: 2px solid #8ab4f8;">
+                    Bonjour ! Je suis Gemini (Mode Local), l'intelligence artificielle experte de Hosni Fathi. Comment puis-je vous aider aujourd'hui ?
+                </div>
+            </div>
+            <div class="ai-input-area">
+                <input type="text" id="ai-input" placeholder="Posez une question technique...">
+                <button class="btn btn-primary" id="ai-send" style="padding: 8px 15px;"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="ai-toggle" id="ai-toggle-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" style="padding: 100px 0 50px; border-top: 1px solid var(--border-color);">
+        <div class="container card-grid">
+            <div class="footer-info">
+                <h3 style="margin-bottom: 20px;">Hosni Fathi</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Expert Ingénierie Civil & Structures complexes.<br>
+                    Basé en Tunisie, interventions internationales.
+                </p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" class="glass" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="glass" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="glass" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="technical-font" style="margin-bottom: 20px;">CONTACT RAPIDE</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="tel:+21698560836" style="color: var(--text-primary); text-decoration: none;"><i class="fas fa-phone"></i> +216 98 560 836</a>
+                    <a href="https://wa.me/21698560836" style="color: var(--text-primary); text-decoration: none;"><i class="fab fa-whatsapp"></i> WhatsApp Business</a>
+                    <a href="mailto:contact@hosnifathi.com" style="color: var(--text-primary); text-decoration: none;"><i class="fas fa-envelope"></i> contact@fathi.en</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="technical-font" style="margin-bottom: 20px;">NEWSLETTER</h4>
+                <div style="display: flex; gap: 5px;">
+                    <input type="email" placeholder="Email" class="glass" style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color);">
+                    <button class="btn btn-primary" style="padding: 10px 15px;"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; font-size: 0.8rem; opacity: 0.6;">
+            © 2026 Hosni Fathi - Engineering & Structural Design. Built with Precision.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
